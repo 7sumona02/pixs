@@ -48,7 +48,7 @@ const Page = () => {
 
       {/* Scrollable content */}
       <div className="h-full w-full overflow-y-auto flex justify-center">
-        <div className="w-full max-w-lg pt-32 space-y-10 md:px-0 px-5">
+        <div className="w-full max-w-lg pt-32 space-y-10 md:px-0 px-3">
           <h1 className="text-3xl font-medium tracking-tight max-w-md">
             We design brands & build websites that actually work.
           </h1>
