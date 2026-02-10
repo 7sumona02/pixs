@@ -1,5 +1,7 @@
 import Link from "next/link";
 import InfiniteCarousel from "./carousel";
+import { ArrowRight } from "lucide-react";
+import Navbar from "./Navbar";
 
 type ProgressiveBlurProps = {
   className?: string;
@@ -43,12 +45,13 @@ const Page = () => {
   return (
     <div className="relative h-screen w-screen bg-[#f5f4f3] overflow-hidden">
       {/* Progressive blur layers */}
-      <ProgressiveBlur position="top" backgroundColor="#f5f4f3" />
       <ProgressiveBlur position="bottom" backgroundColor="#f5f4f3" />
 
       {/* Scrollable content */}
-      <div className="h-full w-full overflow-y-auto flex justify-center">
-        <div className="w-full max-w-lg pt-32 space-y-10 md:px-0 px-3">
+      <div className="h-full w-full overflow-y-auto flex justify-center md:px-0 px-3">
+        <Navbar />
+
+        <div className="w-full max-w-lg md:pt-44 pt-32 space-y-10">
           <h1 className="text-3xl font-medium tracking-tight max-w-md">
             We design brands & build websites that actually work.
           </h1>
